@@ -32,6 +32,7 @@ img {
   --second-main-color: #404bbf;
   --white-color: #f4f4fd;
   --tipical-line-height: 1.5;
+  --color-btn-white: #e7e9fc;
 }
 
 .list {
@@ -87,13 +88,14 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--color-btn-white);
 }
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
   color: #ffffff;
   background: var(--second-main-color);
+  border: 1px solid transparent;
 }
 
 .logo-title {
@@ -106,6 +108,7 @@ img {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo-first {
@@ -113,14 +116,17 @@ img {
 }
 
 .header-logo-second {
-  margin-right: 76px;
+  margin: 0 auto;
   color: var(--title-color);
 }
 .footer-logo-first {
-  margin-bottom: 16px;
+  display: inline-block;
+  margin: 0 0 16px 0;
   color: var(--first-main-color);
 }
 .footer-logo-second {
+  display: inline-block;
+  margin: 0;
   color: var(--white-color);
 }
 
@@ -221,7 +227,7 @@ img {
   background: var(--title-color);
 }
 .footer-container {
-  display: inline-block;
+  display: flex;
   flex-direction: column;
 }
 
@@ -238,8 +244,8 @@ img {
 .section-hero {
   padding-top: 188px;
   padding-bottom: 188px;
-
   align-items: center;
+
   background: var(--title-color);
 }
 .hero-container {
@@ -337,11 +343,12 @@ img {
 .name-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-width: 232px;
   padding: 32px 16px;
-  gap: 24px;
 }
 .team-title {
+  display: flex;
   font-weight: 500;
   font-size: 20px;
   text-align: center;
@@ -352,6 +359,7 @@ img {
 }
 
 .team-text {
+  display: flex;
   text-align: center;
   line-height: var(--tipical-line-height);
   letter-spacing: 0.02em;
@@ -359,20 +367,20 @@ img {
 
 /**-----------------MENU BUTTON-----------------*/
 
-.section-btn {
+.section-portfoloi {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .filter-title {
 }
 .btn-container {
-  padding-top: 96px;
-  padding-bottom: 72px;
 }
 .btn-list {
   display: flex;
   gap: 24px;
-  list-style: none;
   justify-content: center;
   align-items: center;
+  margin-bottom: 72px;
 }
 .btn-item {
 }
@@ -386,17 +394,22 @@ img {
 .gallery-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .gallery-item {
+  width: calc((100% - 48px) / 3);
   margin-bottom: 48px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--color-btn-white);
 }
 .gallery-link {
   margin-bottom: 32px;
 }
-
+.container-gallery {
+  padding: 32px 16px;
+  border: 1px solid var(--color-btn-white);
+  border-top: none;
+}
 .gallery-title {
   padding-top: 32px;
   margin-bottom: 8px;
