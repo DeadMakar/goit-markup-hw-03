@@ -43,6 +43,7 @@ img {
 }
 
 .btn-hero {
+  border: none;
   min-width: 169px;
   height: 56px;
   border-radius: 4px;
@@ -112,9 +113,11 @@ img {
 }
 
 .header-logo-second {
+  margin-right: 76px;
   color: var(--title-color);
 }
 .footer-logo-first {
+  margin-bottom: 16px;
   color: var(--first-main-color);
 }
 .footer-logo-second {
@@ -140,12 +143,13 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
-/*-----HEADER-----*/
+/**---------------HEADER-----------------*/
 
 .header-section {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -159,7 +163,6 @@ img {
 .nav-list {
   display: flex;
   align-items: center;
-  margin-left: 76px;
 }
 .nav-item:not(:last-child) {
   margin-right: 40px;
@@ -209,7 +212,7 @@ img {
   color: var(--second-main-color);
 }
 
-/*-----FOOTER-----*/
+/**---------------FOOTER---------------*/
 
 .footer-section {
   padding-top: 100px;
@@ -218,20 +221,19 @@ img {
   background: var(--title-color);
 }
 .footer-container {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
 }
 
 .footer-text {
   max-width: 264px;
-  margin-top: 16px;
 
   line-height: var(--tipical-line-height);
   letter-spacing: 0.02em;
   color: var(--white-color);
 }
 
-/*-----HERO-----*/
+/**------------------HERO------------------*/
 
 .section-hero {
   padding-top: 188px;
@@ -256,10 +258,11 @@ img {
   color: #ffffff;
 }
 
-/*-----OUR PRINCIPLES AND PRIORITIES-----*/
+/**-----------OUR PRINCIPLES AND PRIORITIES-----------*/
 
 .section-principles {
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .principles-container {
   display: flex;
@@ -286,10 +289,9 @@ img {
   letter-spacing: 0.02em;
 }
 
-/*-----OUR PRODUCTS-----*/
+/**----------------OUR PRODUCTS----------------*/
 
 .product-section {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 .product-container {
@@ -312,7 +314,7 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-/*-----OUR TEAM-----*/
+/**-------------------OUR TEAM-------------------*/
 
 .team-section {
   padding-top: 120px;
@@ -328,30 +330,34 @@ img {
   gap: 24px;
 }
 .team-item {
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
   width: calc((100% - 72px) / 4);
 }
+.name-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 232px;
+  padding: 32px 16px;
+  gap: 24px;
+}
 .team-title {
-  padding-top: 32px;
-  margin-bottom: 8px;
-
   font-weight: 500;
   font-size: 20px;
   text-align: center;
+  margin-bottom: 8px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
 
 .team-text {
-  padding-bottom: 32px;
-
-  line-height: var(--tipical-line-height);
   text-align: center;
+  line-height: var(--tipical-line-height);
   letter-spacing: 0.02em;
 }
 
-/*-----MENU BUTTON-----*/
+/**-----------------MENU BUTTON-----------------*/
 
 .section-btn {
 }
@@ -371,7 +377,7 @@ img {
 .btn-item {
 }
 
-/*-----OUR GALLERY-----*/
+/**-----------------OUR GALLERY-----------------*/
 
 .gallery-container {
   display: flex;
