@@ -117,7 +117,7 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /**---------------HEADER-----------------*/
@@ -216,8 +216,6 @@ img {
   background: var(--title-color);
 }
 .footer-container {
-  display: flex;
-  flex-direction: column;
 }
 .footer-logo-first {
   display: inline-block;
