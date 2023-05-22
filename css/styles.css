@@ -407,9 +407,7 @@ img {
   border-top: none;
 }
 .gallery-title {
-  padding-top: 32px;
   margin-bottom: 8px;
-  padding-left: 16px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -418,7 +416,6 @@ img {
 }
 
 .gallery-text {
-  padding-left: 16px;
   line-height: var(--tipical-line-height);
   letter-spacing: 0.02em;
   color: #434455;
